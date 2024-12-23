@@ -7,7 +7,7 @@ public class PugiXMLProject : BaseCppProject
     public PugiXMLProject()
     {
         Name = "pugixml";
-        SourceRootPath = @"[project.SharpmakeCsPath]";
+        SourceRootPath = @"[project.SharpmakeCsPath]\src";
         AddTargets(TargetUtil.DefaultTarget);
     }
 
@@ -21,5 +21,6 @@ public class PugiXMLProject : BaseCppProject
         conf.Output = Project.Configuration.OutputType.Lib;
         conf.TargetPath = @"[project.SharpmakeCsPath]\Out\Bin\[target.Platform]-[target.Optimization]";
         conf.IntermediatePath = @"[project.SharpmakeCsPath]\Out\Intermediate\[target.Platform]-[target.Optimization]";
+        conf.IncludePaths.Add(@"[project.SharpmakeCsPath]\src");
     }
 }
