@@ -2,11 +2,11 @@ using System.IO; // For Path.Combine
 using Sharpmake; // Contains the entire Sharpmake object library.
 
 [Generate]
-public class PugiXMLProject : BaseCppProject
+public class HdnCodeExternalPugiXMLProject : BaseCppProject
 {
-    public PugiXMLProject()
+    public HdnCodeExternalPugiXMLProject()
     {
-        Name = "pugixml";
+        Name = "hdn.code.external.pugixml";
         SourceRootPath = @"[project.SharpmakeCsPath]\src";
         AddTargets(TargetUtil.DefaultTarget);
     }
