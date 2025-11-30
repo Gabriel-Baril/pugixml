@@ -6,7 +6,7 @@ public class HdnCodeExternalPugiXMLProject : BaseCppProject
 {
     public HdnCodeExternalPugiXMLProject()
     {
-        Name = "hdn.code.external.pugixml";
+        Name = "dm.code.external.pugixml";
         SourceRootPath = @"[project.SharpmakeCsPath]\src";
         AddTargets(TargetUtil.DefaultTarget);
     }
